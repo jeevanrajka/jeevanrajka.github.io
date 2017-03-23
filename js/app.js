@@ -31,7 +31,8 @@ example.controller("HttpGetController", function ($scope, $http) {
    /*     $http.post('https://login.salesforce.com/services/oauth2/token', $scope.url)
         .success(function(successData){
           console.log(successData.id);
-        }); */
+        }); 
+        */
 
 
                 $http({
