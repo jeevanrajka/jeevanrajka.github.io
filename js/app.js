@@ -28,10 +28,10 @@ example.controller("HttpGetController", function ($scope, $http) {
         console.log($scope.url);
 
 
-     /*    $http.post('https://login.salesforce.com/services/oauth2/token', $scope.url)
+        $http.post('https://login.salesforce.com/services/oauth2/token', $scope.url)
         .success(function(successData){
           console.log(successData.id);
-        });*/
+        });
 
 
         /*          $http({
@@ -45,7 +45,7 @@ example.controller("HttpGetController", function ($scope, $http) {
             });*/
     
     
-        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+   /*     if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
         }
         else {// code for IE6, IE5
@@ -57,6 +57,7 @@ example.controller("HttpGetController", function ($scope, $http) {
 
         $scope.id = xmlDoc.getElementByTagName("id");
         console.log($scope.id);
+        */
 
         window.location.href = "https://jeevanrajka.github.io/#/secure";
        // https://jeevanrajka.github.io/oauth_callback.html
