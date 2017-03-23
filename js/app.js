@@ -28,13 +28,13 @@ example.controller("HttpGetController", function ($scope, $http) {
         console.log($scope.url);
 
 
-        $http.post('https://login.salesforce.com/services/oauth2/token', $scope.url)
+   /*     $http.post('https://login.salesforce.com/services/oauth2/token', $scope.url)
         .success(function(successData){
           console.log(successData.id);
-        });
+        }); */
 
 
-        /*          $http({
+                $http({
                 method : "GET",
                 url : "https://login.salesforce.com/services/oauth2/token?" + $scope.url
             }).then(function mySucces(response) {
@@ -42,7 +42,7 @@ example.controller("HttpGetController", function ($scope, $http) {
             }, function myError(response) {
                 $scope.myWelcome = response.statusText;
                 console.log(response.data.id);
-            });*/
+            });
     
     
    /*     if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
