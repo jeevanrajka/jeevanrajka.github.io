@@ -60,7 +60,7 @@ example.controller("HttpGetController", function ($scope, $http) {
         console.log($scope.id);
         */
 
-        window.location.href = "https://jeevanrajka.github.io/#/secure";
+       // window.location.href = "https://jeevanrajka.github.io/#/secure";
        // https://jeevanrajka.github.io/oauth_callback.html
 
     }
