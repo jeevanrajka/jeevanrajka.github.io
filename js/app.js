@@ -24,7 +24,7 @@ example.controller("HttpGetController", function ($scope, $http) {
 
 
         // use $.param jQuery function to serialize data from JSON 
-        $scope.url = "grant_type=authorization_code&code=" + $scope.authCode + "&client_id=3MVG9d8..z.hDcPLYDRVrSqJ5pWGR1jR_nr62gB4mFDdhczCF88mUN3hSc0kpWqMCAgmjE1Ci9kyBPvhN892H&client_secret=484651292492712585&redirect_uri=https://jeevanrajka.github.io/oauth_callback.html"
+   /*     $scope.url = "grant_type=authorization_code&code=" + $scope.authCode + "&client_id=3MVG9d8..z.hDcPLYDRVrSqJ5pWGR1jR_nr62gB4mFDdhczCF88mUN3hSc0kpWqMCAgmjE1Ci9kyBPvhN892H&client_secret=484651292492712585&redirect_uri=https://jeevanrajka.github.io/oauth_callback.html"
         console.log($scope.url);
 
 
@@ -62,6 +62,8 @@ example.controller("HttpGetController", function ($scope, $http) {
 
        // window.location.href = "https://jeevanrajka.github.io/#/secure";
        // https://jeevanrajka.github.io/oauth_callback.html
+        
+        */
 
     }
     else {
