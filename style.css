@@ -1,0 +1,111 @@
+/* <This is for Login and Register Page> */
+
+.threeDiv {
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.threeDivEmail {
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.commonCenter {
+	text-align: center;
+}
+
+.commonCenterColor {
+	color: brown;
+}
+
+.email {
+	padding-bottom:15px;
+}
+
+.labelCheck {
+	width: 18px;
+    height: 18px;
+}
+
+.labelLogin {
+	font-size: 14px;
+    color: blue;
+}
+
+.inputFields {
+	width: 95%;
+    border: 1px solid gainsboro;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.threeImage {
+	width: 30%;
+    border-radius: 15%;
+}
+
+.login {
+display:inline-block;
+background: #2891FA;
+border: 5px solid #024F9C;
+width: 150px;
+height: 30px;
+text-align: center;
+color: white;
+font-size: 25px;
+font-weight: bold;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.register {
+display:inline-block;
+background: #2891FA;
+border: 5px solid #024F9C;
+width: 150px;
+height: 30px;
+text-align: center;
+color: white;
+font-size: 25px;
+font-weight: bold;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#button {
+    background: #2891FA;
+    border: 3px solid #024F9C;
+    border-radius: 20px;
+    width: 150px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+}
+
+.loginRegister {
+    border: 1px solid grey;
+    box-shadow: 0px 2px 10px 0px;
+    padding-left: 10px;
+    margin-top: 35px;
+    background: whitesmoke;
+}
+
+.anchor {
+	text-decoration: none;
+}
+
+.bodyClass {
+	position: absolute;
+}
+
+/* <This is for Home Page> */
+
+
