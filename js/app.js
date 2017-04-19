@@ -75,7 +75,7 @@ example.controller("HttpGetController", function ($scope, $http) {
 example.controller("LoginController", function ($scope) {
 
     $scope.login = function () {
-        window.location.href = "https://login.salesforce.com/services/oauth2/authorize?response_type=code&client_id=3MVG9d8..z.hDcPLYDRVrSqJ5pWGR1jR_nr62gB4mFDdhczCF88mUN3hSc0kpWqMCAgmjE1Ci9kyBPvhN892H&redirect_uri=https://jeevanrajka.github.io/oauth_callback.html"
+        window.location.href = "https://login.salesforce.com/services/oauth2/authorize?response_type=code&client_id=3MVG9d8..z.hDcPLYDRVrSqJ5pdJna2uaTNMqqhdBxwWKPGWbMfJWnsboxtw6xgr8iyvltmL75.WAqzwy2FbW&redirect_uri=https://jeevanrajka.github.io/oauth_callback.html"
     }
 
 });
