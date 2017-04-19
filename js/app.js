@@ -63,7 +63,7 @@ example.controller("HttpGetController", function ($scope, $http) {
        // window.location.href = "https://jeevanrajka.github.io/#/secure";
        // https://jeevanrajka.github.io/oauth_callback.html
         
-        */
+        
 
     }
     else {
