@@ -18,10 +18,10 @@ app.controller('successCtrl', function ($scope, $http) {
 	 if($scope.b == "access_token"){
 		 $scope.hide = false;
 		 $scope.accessToken = $scope.a.split("access_token=")[1];
-		 $scope.accessToken = $scope.accessToken.split("&refresh_token")[0];
+		 $scope.accessToken = $scope.accessToken.split("&")[0];
          console.log($scope.accessToken);
 		 $scope.refreshToken = $scope.a.split("refresh_token=")[1];
-		 $scope.refreshToken = $scope.refreshToken.split("&expires_in=")[0];
+		 $scope.refreshToken = $scope.refreshToken.split("&")[0];
          console.log($scope.refreshToken);
 	 }
 	 
