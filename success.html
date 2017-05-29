@@ -2,20 +2,23 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
         <script>
+            console.log("1");
             var app = angular.module('myApp', []);
             app.controller('myCtrl', function($scope, $http) {
             var callbackResponse = (document.URL).split("=")[1];
-            
+            console.log("2");
             var postURL = "https://login.salesforce.com/services/oauth2/token?" + "grant_type=authorization_code&code=" + callbackResponse + "&client_id=3MVG9d8..z.hDcPLJIboTbSCe.hQL0J7cxs90k3ygaESovPoxopXp62fv6l.cBqJV72HVEM5KMQwPmNsgrbdI&client_secret=3267218946519978806&redirect_uri=https://jeevanrajka.github.io/success.html"  ;
 
       $http({
                 method : "POST",
                 url : postURL
             }).then(function mySucces(response) {
+          console.log("3");
                // $scope.myWelcome = response.data;
                 localStorage.setItem("access",JSON.stringify(response.data));
                 window.location.href = "https://jeevanrajka.github.io/success1.html";
             }, function myError(response) {
+          console.log("4");
                 $scope.myWelcome = response.statusText;
                 alert("error");
                 console.log(response.data.id);
