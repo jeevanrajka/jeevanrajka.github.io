@@ -1,12 +1,11 @@
 <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <script>
             var app = angular.module('myApp', []);
             app.controller('myCtrl', function($scope, $http) {
             var callbackResponse = (document.URL).split("=")[1];
             
-            var postURL = "https://login.salesforce.com/services/oauth2/token?" + "grant_type=authorization_code&code=" + callbackResponse;
+            var postURL = "https://login.salesforce.com/services/oauth2/token?" + "grant_type=authorization_code&code=" + callbackResponse + "&client_id=3MVG9d8..z.hDcPLJIboTbSCe.hQL0J7cxs90k3ygaESovPoxopXp62fv6l.cBqJV72HVEM5KMQwPmNsgrbdI&client_secret=3267218946519978806&redirect_uri=https://jeevanrajka.github.io/success.html"  ;
 
       $http({
                 method : "POST",
