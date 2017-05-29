@@ -5,13 +5,13 @@
             console.log("1");
             var app = angular.module('myApp', []);
             app.controller('myCtrl', function($scope, $http) {
-            var callbackResponse = (document.URL).split("=")[1];
+            $scope.callbackResponse = (document.URL).split("=")[1];
             console.log("2");
-            var postURL = "https://login.salesforce.com/services/oauth2/token?" + "grant_type=authorization_code&code=" + callbackResponse + "&client_id=3MVG9d8..z.hDcPLJIboTbSCe.hQL0J7cxs90k3ygaESovPoxopXp62fv6l.cBqJV72HVEM5KMQwPmNsgrbdI&client_secret=3267218946519978806&redirect_uri=https://jeevanrajka.github.io/success.html"  ;
+            $scope.postURL = "https://login.salesforce.com/services/oauth2/token?" + "grant_type=authorization_code&code=" + $scope.callbackResponse + "&client_id=3MVG9d8..z.hDcPLctYKc1LCdYB6BXQZYQOI.0qrBMzu.m.A2i9Ov6jrB2MNLWt7fHcp43vGzlWZhiEUM0RFu&client_secret=9090652624565001015&redirect_uri=https://jeevanrajka.github.io/success.html"  ;
 
       $http({
                 method : "POST",
-                url : postURL
+                url : $scope.postURL
             }).then(function mySucces(response) {
           console.log("3");
                // $scope.myWelcome = response.data;
