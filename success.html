@@ -33,10 +33,9 @@
                         client_secret: "9090652624565001015",
                         redirect_uri: "https://jeevanrajka.github.io/success.html"
                     }
-                }).then(function(response){
+                }).success(function(response){
                     console.log("success");
-                },
-                function(response){
+                }).error(function(response){
                     console.log(response.id);
                     
                 });
