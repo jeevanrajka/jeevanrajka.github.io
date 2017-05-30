@@ -25,7 +25,8 @@
                 $http({
                     method: 'POST',
                     url: "https://login.salesforce.com/services/oauth2/token",
-                    dataType : "html",
+                    dataType : "json",
+                    
                         params: {
                         grant_type: "authorization_code",
                         code: $scope.callbackResponse,
