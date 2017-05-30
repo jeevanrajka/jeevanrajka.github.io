@@ -6,6 +6,7 @@
             app.controller('myCtrl', function ($scope, $http) {
                 $scope.callbackResponse = (document.URL).split("=")[1];
                 $scope.callbackResponse = $scope.callbackResponse.split("%")[0];
+                $scope.callbackResponse = $scope.callbackResponse + "==";               
                 console.log($scope.callbackResponse);
                
                 /*  $http({
