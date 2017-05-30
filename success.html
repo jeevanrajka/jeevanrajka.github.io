@@ -5,8 +5,8 @@
             var app = angular.module('myApp', []);
             app.controller('myCtrl', function ($scope, $http) {
                 $scope.callbackResponse = (document.URL).split("=")[1];
-                $scope.callbackResponse = $scope.callbackResponse.split("%")[0];
-                $scope.callbackResponse = $scope.callbackResponse + "==";               
+               // $scope.callbackResponse = $scope.callbackResponse.split("%")[0];
+               // $scope.callbackResponse = $scope.callbackResponse + "==";               
                 console.log($scope.callbackResponse);
                
                 /*  $http({
@@ -58,7 +58,7 @@ xhr.send(params);
                 $http({
                        method : 'POST',
                        url :"https://login.salesforce.com/services/oauth2/token",
-                        withCredentials : true,
+                    //    withCredentials : true,
                         headers : {
                        contentType : 'application/json'
                         },
