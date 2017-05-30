@@ -3,6 +3,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
         <script>
             var app = angular.module('myApp', []);
+
             app.controller('myCtrl', function ($scope, $http) {
                 $scope.callbackResponse = (document.URL).split("=")[1];
                 $scope.callbackResponse = $scope.callbackResponse.split("%")[0];
@@ -26,7 +27,7 @@
                     method: 'POST',
                     url: "https://login.salesforce.com/services/oauth2/token",
 
-                        Content-Type:"application/www-form-urlencoded",        
+                        header : {Accept:"application/x-www-form-urlencoded"},        
                         params: {
                         grant_type: "authorization_code",
                         code: $scope.callbackResponse,
@@ -48,7 +49,7 @@ console.log("Lenght::",lenghtof(data));
 console.log("data:;",data.access_token);
 console.log("data:;",data);
 console.log("typeof::",typeof(data));
-$scope.response = JSON.parse(data);
+
 console.log("JSONdata:;",$scope.response.access_token);
 
                       });
