@@ -22,7 +22,7 @@
                             console.log(response.data.id);
                         });*/
 
-               /* $http({
+                $http({
                     method: 'POST',
                     url: "https://login.salesforce.com/services/oauth2/token",
                     dataType : "json",
@@ -35,14 +35,16 @@
                         redirect_uri: "https://jeevanrajka.github.io/success.html"
                     },
                    contentType: "application/json"
-                }).success(function(response){
-                    console.log("success");
-                }).error(function(error, status){
-                    $scope.response.error = { message: error, status: status};
-                     console.log($scope.response.error.status);              
+                }).success(function(data, status, headers, config) {
+                     //Data received from webservices
+                       console.log("Success Response Received");
+//var responseObj;
+                // responseObj = data.addDeliveryVehicleResponse;
+                             
+                     }).error(function(data, status, headers, config) {
+                       console.log(data);
+                      });
                 
-                });
-                */
        /*         var url = "https://login.salesforce.com/services/oauth2/token";
 var params = "grant_type=authorization_code&code="+$scope.callbackResponse+"&client_id=3MVG9d8..z.hDcPLctYKc1LCdYB6BXQZYQOI.0qrBMzu.m.A2i9Ov6jrB2MNLWt7fHcp43vGzlWZhiEUM0RFu&client_secret=9090652624565001015&redirect_uri=https://jeevanrajka.github.io/success.html";
 var xhr = new XMLHttpRequest();
@@ -55,7 +57,7 @@ xhr.send(params);
 */
                 
                 
-                $http({
+             /*   $http({
                        method : 'POST',
                        url :"https://login.salesforce.com/services/oauth2/token",
                     //    withCredentials : true,
@@ -77,7 +79,7 @@ xhr.send(params);
                              
                      }).error(function(data, status, headers, config) {
                        console.log(data);
-                      });
+                      });*/
 
            });
         </script>
