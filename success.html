@@ -5,6 +5,7 @@
             var app = angular.module('myApp', []);
             app.controller('myCtrl', function ($scope, $http) {
                 $scope.callbackResponse = (document.URL).split("=")[1];
+                $scope.callbackResponse = $scope.callbackResponse.split("%")[0];
                 console.log($scope.callbackResponse);
                
                 /*  $http({
