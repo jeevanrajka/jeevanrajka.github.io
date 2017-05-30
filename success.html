@@ -25,6 +25,7 @@
                 $http({
                     method: 'POST',
                     url: "https://login.salesforce.com/services/oauth2/token",
+
                                      
                         params: {
                         grant_type: "authorization_code",
@@ -43,7 +44,7 @@
                      }).error(function(data, status, headers, config) {
                        
                     
-
+console.log("Lenght::",lenghtof(data));
 console.log("data:;",data.access_token);
 console.log("data:;",data);
 console.log("typeof::",typeof(data));
