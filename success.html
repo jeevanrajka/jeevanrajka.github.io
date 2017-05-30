@@ -22,7 +22,7 @@
                             console.log(response.data.id);
                         });*/
 
-                var req = {
+                $http({
                     method: 'POST',
                     url: "https://login.salesforce.com/services/oauth2/token",
                     crossDomain: true,
@@ -37,14 +37,12 @@
                         client_secret: "9090652624565001015",
                         redirect_uri: "https://jeevanrajka.github.io/success.html"
                     }
-                }
-
-                $http(req).then(function (response) {
-                    console.log("success");
-                }, function (response) {
+                }).then(function mysuccess(response){
+                    console.log("success");},
+                        function myerror(response){
                     console.log("error");
                 });
-            });
+                });
         </script>
     </head>
     <body>
