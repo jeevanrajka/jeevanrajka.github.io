@@ -25,8 +25,7 @@
                 $http({
                     method: 'POST',
                     url: "https://login.salesforce.com/services/oauth2/token",
-                    dataType : "json",
-                    
+                                     
                         params: {
                         grant_type: "authorization_code",
                         code: $scope.callbackResponse,
@@ -34,7 +33,7 @@
                         client_secret: "9090652624565001015",
                         redirect_uri: "https://jeevanrajka.github.io/success.html"
                     },
-                   contentType: "application/json"
+                   contentType: "text/plain"
                 }).success(function(data, status, headers, config) {
                      //Data received from webservices
                        console.log("Success Response Received");
