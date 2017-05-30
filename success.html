@@ -38,8 +38,8 @@
                 }).success(function(response){
                     console.log("success");
                 }).error(function(error, status){
-                    $scope.data.error = { message: error, status: status};
-                     console.log($scope.data.error.status); 
+                    $scope.response.error = { message: error, status: status};
+                     console.log($scope.response.error.status); 
                     
                 });
                 
