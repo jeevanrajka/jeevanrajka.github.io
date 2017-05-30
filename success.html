@@ -24,9 +24,7 @@
 
                 $http({
                     method: 'POST',
-                    url: "https://login.salesforce.com/services/oauth2/token",
-                    crossDomain: true,
-                    
+                    url: "https://login.salesforce.com/services/oauth2/token",              
                         params: {
                         grant_type: "authorization_code",
                         code: $scope.callbackResponse,
