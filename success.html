@@ -2,28 +2,48 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
         <script>
-            console.log("1");
             var app = angular.module('myApp', []);
-            app.controller('myCtrl', function($scope, $http) {
-            $scope.callbackResponse = (document.URL).split("=")[1];
-            console.log("2");
+            app.controller('myCtrl', function ($scope, $http) {
+                $scope.callbackResponse = (document.URL).split("=")[1];
                 console.log($scope.callbackResponse);
-            $scope.postURL = "https://login.salesforce.com/services/oauth2/token?" + "grant_type=authorization_code&code=" + $scope.callbackResponse + "&client_id=3MVG9d8..z.hDcPLctYKc1LCdYB6BXQZYQOI.0qrBMzu.m.A2i9Ov6jrB2MNLWt7fHcp43vGzlWZhiEUM0RFu&client_secret=9090652624565001015&redirect_uri=https://jeevanrajka.github.io/success.html"  ;
+               
+                /*  $http({
+                            method : "POST",
+                            url : postURL
+                        }).then(function mySucces(response) {
+                           // $scope.myWelcome = response.data;
+                            localStorage.setItem("access",JSON.stringify(response.data));
+                            window.location.href = "https://jeevanrajka.github.io/success1.html";
+                        }, function myError(response) {
+                            $scope.myWelcome = response.statusText;
+                            alert("error");
+                            console.log(response.data.id);
+                        });*/
 
-     $http({
-                method : "POST",
-                url : $scope.postURL
-            }).then(function mySucces(response) {
-          console.log("3");
-               // $scope.myWelcome = response.data;
-                localStorage.setItem("access",JSON.stringify(response.data));
-                window.location.href = "https://jeevanrajka.github.io/success1.html";
-            }, function myError(response) {
-          console.log("4");
-                $scope.myWelcome = response.statusText;
-                alert("error");
-                console.log(response.data.id);
-            });
+                var req = {
+                    method: 'POST',
+                    url: "https://login.salesforce.com/services/oauth2/token",
+                    crossDomain: true,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+                        'Access-Control-Allow-Headers': 'X-Requested-With'
+                    },
+                    params: {
+                        grant_type: "authorization_code",
+                        code: $scope.callbackResponse,
+                        client_id: "3MVG9d8..z.hDcPLctYKc1LCdYB6BXQZYQOI.0qrBMzu.m.A2i9Ov6jrB2MNLWt7fHcp43vGzlWZhiEUM0RFu",
+                        client_secret: 9090652624565001015,
+                        redirect_uri: "https://jeevanrajka.github.io/success.html"
+                    }
+                }
+
+                $http(req).then(function (response) {
+                    console.log("success");
+                }, function (response) {
+                    console.log("error");
+                });
             });
         </script>
     </head>
