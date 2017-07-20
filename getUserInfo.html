@@ -16,7 +16,7 @@
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
-  $http.get("https://cs88.salesforce.com/services/apexrest/getUserInfo",{header: {'Authorization': 'Bearer SESSION_ID'}})
+  $http.get("https://cs88.salesforce.com/services/apexrest/getUserInfo",{headers: {'Authorization': 'Bearer SESSION_ID'}})
   .then(function(response) {
       $scope.myWelcome = response.FirstName;
   });
