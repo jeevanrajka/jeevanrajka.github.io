@@ -21,7 +21,7 @@ app.controller('myCtrl', function($scope, $http) {
   'Content-type':'application/json'}})
   .then(function(response) {
       $scope.myWelcome = response.FirstName;
-  });
+  },function(response){$scope.myWelcome = response};
 });
 </script>
 
