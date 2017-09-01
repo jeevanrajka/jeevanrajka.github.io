@@ -29,7 +29,7 @@
 
 .sfid-button-label {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #54698d;
+	color: white;
 	display: block;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -354,6 +354,7 @@
 
 .nameUsername {
     font-size: 40px;
+    line-height: 80px;
 }
 
 .nameHeader {
