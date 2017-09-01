@@ -393,11 +393,15 @@
 }
 
 .nameHeader {
-    text-align: center;
-    margin-top: 250px;
-    margin-bottom: 150px;
+    margin-top: 150px;
+    margin-bottom: 120px;
     font-size: 80px;
     color: white;
+    height: 250px;
+}
+
+.nameHeaderDiv {
+    text-align: center;
 }
 
 .logo{
