@@ -85,7 +85,7 @@
 .sfid-wide {
 	width: 100% !important
 }
-#sfid-username, .sfid-username {
+/* #sfid-username, .sfid-username {
 	border-radius: 5px;
 	font-size: 14px;
 	border: 1px solid #e0e5ee;
@@ -100,8 +100,28 @@
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	padding: 12px;
-}
+} */
 
+#sfid-username, .sfid-username {
+    border-radius: 50px;
+    font-size: 14px;
+    border: 2px solid #e0e5ee !important;
+    background-color: transparent !important;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    transition: all .1s;
+    height: 100px;
+    line-height: 20px;
+    -webkit-appearance: none box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    padding: 12px;
+    color: white;
+    font-size: 40px;
+    width: 80% !important;
+    padding: 60px;
+    margin-left: 90px;
+}
 
 #sfid-username:focus, .sfid-username:focus  {
 	background-color: #fff;
