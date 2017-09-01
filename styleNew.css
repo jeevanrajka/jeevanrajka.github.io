@@ -329,13 +329,14 @@
 }
 
 .sfid-small {
-	font-size: 15px;
+	font-size: 35px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
 	text-align: center;
     -webkit-margin-after: 1em;
     -webkit-margin-before: 1em;
 }
+
 .sfid-lightbox {
 	display: block;
 	position: fixed;
@@ -393,9 +394,9 @@
 
 .nameHeader {
     text-align: center;
-    margin-top: 300px;
-    margin-bottom: 200px;
-    font-size: 70px;
+    margin-top: 250px;
+    margin-bottom: 150px;
+    font-size: 80px;
     color: white;
 }
 
