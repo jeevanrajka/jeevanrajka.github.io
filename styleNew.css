@@ -352,5 +352,8 @@
     color: blue;
 }
 
+.nameUsername {
+    font-size: 40px;
+}
 
 @media only screen and (max-height: 736px) {#sfid-wrapper {margin: 20px auto 0;}}
