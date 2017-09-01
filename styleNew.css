@@ -356,4 +356,9 @@
     font-size: 40px;
 }
 
+.logo{
+    background-image: url("../img/Background.png");
+    background-size:500px 500px; /* This replicates the original standard sprite dimensions, and assumes the actual dimensions of sprite@2x.png are 1000x1000px */
+ }
+
 @media only screen and (max-height: 736px) {#sfid-wrapper {margin: 20px auto 0;}}
