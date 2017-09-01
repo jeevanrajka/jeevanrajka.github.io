@@ -298,8 +298,9 @@
 
 #sfid-error{
 	color:red;
-	font-size: 14px;
+	font-size: 25px;
 	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 90px;
 }
 
 #sfid-error ul {
